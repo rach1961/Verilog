@@ -5,6 +5,7 @@ module mux_8x1(
     output reg y
     );
     always@(*)
+    begin    
     y = (sel == 3'b000)? i[0]:
         (sel == 3'b001)? i[1]:
         (sel == 3'b010)? i[2]:
@@ -13,6 +14,5 @@ module mux_8x1(
         (sel == 3'b101)? i[5]:
         (sel == 3'b110)? i[6]:
                          i[7];
-    begin
     end
 endmodule
