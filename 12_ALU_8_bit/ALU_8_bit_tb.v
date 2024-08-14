@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+
 module ALU_tb();
 reg [7:0]a;
 reg [7:0]b;
